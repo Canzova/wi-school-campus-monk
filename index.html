@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WiSchool</title>
+
+    <!-- Connecting css file -->
+    <link rel="stylesheet" href="./style.css">
+
+    <!-- Google fonts links -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Sans+3:ital,wght@0,200..900;1,200..900&display=swap"
+        rel="stylesheet">
+
+    <!-- Font Awesome CDN -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <!-- Link Swiper's CSS -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+</head>
+
+<body>
+
+    <!-- Navbar -->
+    <nav class="navBar_wrapper">
+        <div class="logo_wrapper">
+            <img src="./images/logo.jpg" alt="Logo">
+        </div>
+        <div class="links_wrapper">
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#popular">Popular</a>
+            <a href="#instructors">Instructors</a>
+            <a href="#contact">Contact Us</a>
+        </div>
+        <div class="btn_wrapper">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <div class="buttons">
+                <button class="login">Login</button>
+                <button class="sign_in">Sing In</button>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Mobile nav Bar -->
+    <section class="mobile_nav">
+        <div class="logo_wrapper">
+            <img src="./images/logo.jpg" alt="Logo">
+        </div>
+
+        <div class="hamberger_icon">
+            <i class="fa-solid fa-bars"></i>
+        </div>
+
+        <div class="mobile_nav_link hidden transform">
+            <div class="cross_icon">
+                <i class="fa-solid fa-xmark"></i>
+            </div>
+            <a href="#home">Home</a>
+            <a href="#courses">Courses</a>
+            <a href="#popular">Popular</a>
+            <a href="#instructors">Instructors</a>
+            <a href="#contact">Contact Us</a>
+            <div class="btn_wrapper">
+                <div class="buttons">
+                    <button class="login mobile">Login</button>
+                    <button class="sign_in mobile">Sing In</button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Home -->
+    <section id="home" class="home_wrapper">
+        <div class="top">
+            <div class="left">
+                <h1>Quality <span>Education</span> By Any Means Necessary.</h1>
+                <button class="sign_in">Get Started</button>
+            </div>
+            <div class="right">
+                <img src="./images/girl.jpeg" alt="Girl">
+                <div class="border"></div>
+            </div>
+        </div>
+        <div class="bottom">
+            <div class="wrapper">
+                <div class="icon_wrapper">
+                    <i class="fa-regular fa-file"></i>
+                </div>
+                Problem Solving
+            </div>
+            <div class="wrapper">
+                <div class="icon_wrapper">
+                    <i class="fa-brands fa-rocketchat"></i>
+                </div>
+                Live Chat
+            </div>
+            <div class="wrapper">
+                <div class="icon_wrapper">
+                    <i class="fa-brands fa-readme"></i>
+                </div>
+                Group Reading
+            </div>
+            <div class="wrapper">
+                <div class="icon_wrapper">
+                    <i class="fa-brands fa-discourse"></i>
+                </div>
+                10K Courses
+
+            </div>
+            <div class="wrapper">
+                <div class="icon_wrapper">
+                    <i class="fa-solid fa-chart-line"></i>
+                </div>
+                Activities
+            </div>
+        </div>
+    </section>
+
+    <!-- Courses -->
+    <section id="courses" class="courses_wrapper">
+        <div class="heading">
+            <div>Choose favourite course from top cartegories</div>
+            <div>See All</div>
+        </div>
+
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                    <img src="./images/swiper1.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper2.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper3.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper1.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper2.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+                <div class="swiper-slide">
+                    <img src="./images/swiper3.jpeg" alt="Swiper">
+                    <div class="overflow">Design</div>
+                </div>
+
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+        </div>
+
+    </section>
+
+
+    <!-- Popular Courses -->
+    <section id="popular" class="popular_wrapper">
+        <div class="heading">
+            <div>Most Popular Courses</div>
+            <div>See All</div>
+        </div>
+        <div class="card_wrapper">
+            <div class="card">
+                <img src="./images/pc1.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pc2.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pc3.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pc4.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pc5.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+            <div class="card">
+                <img src="./images/pc6.jpeg" alt="Popular Course">
+                <div class="info">
+                    <div class="upper">
+                        <div class="course_name">
+                            Name of the course
+                        </div>
+                        <div class="star">
+                            <i class="fa-solid fa-star"></i>
+                        </div>
+                    </div>
+                    <div class="lower">
+                        <span>6 Weeks</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!-- Instructors -->
+    <section id="instructors" class="instructors_wrapper">
+        <div class="heading">
+            <div>Meet our instructor</div>
+        </div>
+
+        <div class="instructors">
+            <div class="instructor">
+                <div class="img_conatiner">
+                    <img src="./images/i2.jpeg" alt="instructor">
+                </div>
+                <div class="intro">
+                    <span>Peter Parker</span>
+                    <span>Software Developer</span>
+                </div>
+                <div class="quote">
+                    “Education will be for you what you want it to be”
+                </div>
+            </div>
+            <div class="instructor">
+                <div class="img_conatiner">
+                    <img src="./images/i3.jpeg" alt="instructor">
+                </div>
+                <div class="intro">
+                    <span>Peter Parker</span>
+                    <span>Software Developer</span>
+                </div>
+                <div class="quote">
+                    “Education will be for you what you want it to be”
+                </div>
+            </div>
+            <div class="instructor">
+                <div class="img_conatiner">
+                    <img src="./images/i1.jpeg" alt="instructor">
+                </div>
+                <div class="intro">
+                    <span>Peter Parker</span>
+                    <span>Software Developer</span>
+                </div>
+                <div class="quote">
+                    “Education will be for you what you want it to be”
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Us -->
+    <section id="contact" class="contact_us">
+        <div class="heading">
+            <div>Contact <span>Us</span></div>
+        </div>
+        <div class="contact_upper">
+            <div class="contact_details">Here are our contact details</div>
+            <div class="logos">
+                <div class="email">
+                    <i class="fa-regular fa-envelope"></i>
+                    <h2>Email us at : xyz@gmail.com</h2>
+                </div>
+                <div class="mobile">
+                    <i class="fa-solid fa-mobile-screen"></i>
+                    <h2>Give us a call on : 1234567890</h2>
+                </div>
+            </div>
+        </div>
+
+        <div class="contact_lower">
+            <form action="https://formspree.io/f/xblrlnpd" method="POST">
+                <div class="input_wrap1">
+                    <input type="text" placeholder="Your Name" name="Name" required autocomplete="off">
+                    <input type="email" placeholder="Your Email" name="Email" required autocomplete="off">
+                </div>
+
+                <div class="input_wrap2">
+                    <input type="text" placeholder="Subject" name="Subject" required autocomplete="off">
+                    <textarea name="message" placeholder="Your Message" required autocomplete="off"
+                        minlength="5"></textarea>
+                </div>
+
+                <button class="sign_in" type="submit">Submit</button>
+            </form>
+        </div>
+    </section>
+
+
+    <!-- Connecting Js file -->
+    <script src=" ./app.js"></script>
+
+    <!-- Swiper JS -->
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+    <script>
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 3,
+            spaceBetween: 10,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                // Define breakpoints for different screen sizes
+                0: {
+                    slidesPerView: 1, // Show 1 card per view on smaller screens
+                },
+                600: {
+                    slidesPerView: 2, // Show 2 cards per view on medium-sized screens
+                },
+                1278: {
+                    slidesPerView: 3, // Show 3 cards per view on larger screens
+                },
+            },
+        });
+    </script>
+
+
+</body>
+
+</html>

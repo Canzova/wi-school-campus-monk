@@ -1,0 +1,699 @@
+/* CSS Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Adding variables at the root level of our stylesheet*/
+:root {
+    --primary_colour: #09B451;
+    --border: #E4FFFF;
+}
+
+/* Giving some margin to the body */
+body {
+    margin: 0 2rem;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+/* For smoth Scrool Behaviour */
+html {
+    scroll-behavior: smooth;
+}
+
+/* --------------------------Nav Bar--------------------------- */
+.navBar_wrapper {
+    margin: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+}
+
+.logo_wrapper {
+    height: 4rem;
+    width: 10rem;
+}
+
+.logo_wrapper img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+}
+
+.links_wrapper a {
+    text-decoration: none;
+    color: #000;
+    margin: 0 1rem;
+    font-size: 1.1rem;
+}
+
+.links_wrapper a:hover {
+    color: var(--primary_colour);
+}
+
+.btn_wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 2rem;
+}
+
+.btn_wrapper i {
+    color: var(--primary_colour);
+    font-size: 1.2rem;
+}
+
+.buttons {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.login {
+    padding: .5rem 1.4rem;
+    margin-right: 1.5rem;
+    outline: none;
+    border: 2px solid var(--primary_colour);
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: #fff;
+}
+
+.sign_in {
+    padding: .5rem 1.4rem;
+    outline: none;
+    border: 2px solid var(--primary_colour);
+    border-radius: .4rem;
+    cursor: pointer;
+    background-color: var(--primary_colour);
+    color: #fff;
+}
+
+/* --------------------------Home----------------------- */
+.top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 3rem 10rem;
+    padding-top: 0;
+}
+
+.left {
+    font-size: 2.5rem;
+    margin-right: 5rem;
+}
+
+.left span {
+    color: var(--primary_colour);
+}
+
+.left button {
+    padding: 1rem 2rem;
+}
+
+.right {
+    position: relative;
+}
+
+.right img {
+    height: 30rem;
+    width: 25rem;
+    object-fit: cover;
+    border-radius: 40px 40px 100px 40px;
+}
+
+.border {
+    height: 30rem;
+    border: 5rem solid var(--border);
+    border-radius: 40px 40px 100px 40px;
+    position: absolute;
+    top: 0;
+    right: -50px;
+    z-index: -1;
+}
+
+.bottom {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.wrapper {
+    background-color: var(--border);
+    width: 12rem;
+    height: 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    margin-right: 2rem;
+    border-radius: 1rem;
+    font-size: 1rem;
+    color: #000;
+}
+
+.icon_wrapper {
+    color: #fff;
+    background-color: var(--primary_colour);
+    padding: 1rem;
+    clip-path: circle(40%);
+}
+
+.icon_wrapper i {
+    font-size: 1.2rem;
+}
+
+/* ------------------------Courses----------------------- */
+
+.courses_wrapper {
+    margin: 5rem 0;
+    padding: 0 6rem;
+}
+
+.heading {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 1.5rem;
+    color: #333333;
+    font-weight: bold;
+}
+
+/* Inbulid code from swiper.js */
+.swiper {
+    width: 100%;
+    height: 100%;
+    margin: 2rem;
+}
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    padding: 0 3.5rem;
+    padding-bottom: 3rem;
+}
+
+.swiper-slide img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.swiper {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Our own swiper code */
+.swiper-slide img {
+    height: 20rem;
+    width: 15rem;
+    object-fit: cover;
+    border-radius: 2rem;
+}
+
+.swiper-button-next,
+.swiper-button-prev {
+    color: var(--primary_colour) !important;
+}
+
+.swiper-pagination-bullet-active {
+    background: var(--primary_colour) !important;
+}
+
+.overflow {
+    padding: 1rem;
+    color: #333333;
+    font-weight: bold;
+    font-size: 1.5rem;
+    border-bottom: 2px solid var(--primary_colour);
+}
+
+/* -------------------------Popular Course------------------- */
+
+.popular_wrapper {
+    padding: 0 6rem;
+}
+
+.card_wrapper {
+    padding: 2rem 0;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    gap: 2rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.card {
+    height: 25rem;
+    width: 20rem;
+    border-radius: 2rem;
+}
+
+.card:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.card img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+    border-radius: 1rem;
+    cursor: pointer;
+}
+
+.upper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem;
+}
+
+.course_name {
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.star i {
+    color: var(--primary_colour);
+    font-size: 1.5rem;
+}
+
+.lower {
+    padding: 0 1rem;
+    font-size: 1.2rem;
+    color: var(--primary_colour);
+    font-weight: bold;
+}
+
+/* ----------------------Popular Courses---------------------- */
+.instructors_wrapper {
+    margin: 4rem 6rem;
+}
+
+.instructors {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 0;
+}
+
+.instructor {
+    height: 25rem;
+    width: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border: 2px solid var(--primary_colour);
+    border-radius: 2rem;
+    margin-right: 2rem;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1), 0 6px 20px rgba(0, 0, 0, 0.1);
+    cursor: pointer;
+}
+
+.instructor:hover {
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2), 0 12px 40px rgba(0, 0, 0, 0.2);
+}
+
+.img_conatiner {
+    height: 6rem;
+    width: 6rem;
+}
+
+.img_conatiner img {
+    height: 100%;
+    width: 100%;
+    object-fit: cover;
+    clip-path: circle(50%);
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.intro span {
+    font-size: 1.5rem;
+    padding: 1rem;
+    font-weight: bold;
+}
+
+.intro span:last-child {
+    color: var(--primary_colour);
+}
+
+.quote {
+    font-size: 1.2rem;
+    padding: 1rem 1rem;
+    text-align: center;
+}
+
+/* -------------------------Conatct us------------------------------- */
+.contact_us {
+    margin: 2rem 6rem;
+}
+
+.heading span {
+    color: var(--primary_colour);
+}
+
+.contact_details {
+    font-size: 1.5rem;
+    color: var(--primary_colour);
+    font-weight: bold;
+    text-align: center;
+}
+
+.contact_upper {
+    padding: 2rem 0;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.logos {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.email,
+.mobile {
+    padding: 4rem 4rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.email i,
+.mobile i {
+    font-size: 7rem;
+    color: #333333;
+}
+
+.email h2,
+.mobile h2 {
+    color: #333333;
+}
+
+.input_wrap1 {
+    padding: 0 2rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.input_wrap1 input {
+    border: 2px solid var(--primary_colour);
+    outline: none;
+    height: 3rem;
+    width: 45%;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.input_wrap2 {
+    padding: 2rem 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.input_wrap2 input {
+    width: 100%;
+    height: 3rem;
+    border: 2px solid var(--primary_colour);
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+}
+
+.input_wrap2 textarea {
+    margin-top: 2rem;
+    width: 100%;
+    height: 8rem;
+    border: 2px solid var(--primary_colour);
+    outline: none;
+    padding: 1rem;
+    font-size: 1rem;
+    font-family: "Source Sans 3", sans-serif;
+}
+
+form button {
+    margin-left: 2rem;
+}
+
+/* ------------------------------Mobile nav----------------------------- */
+.mobile_nav {
+    opacity: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 2rem;
+    position: relative;
+}
+
+.hidden {
+    display: none;
+}
+
+.transform {
+    transform: translateX(-100%);
+}
+
+.hamberger_icon {
+    font-size: 2rem;
+    color: var(--primary_colour);
+    cursor: pointer;
+}
+
+.mobile_nav_link {
+    position: absolute;
+    top: 0;
+    height: 70vh;
+    width: 104vw;
+    background-color: #000;
+    z-index: 10;
+    left: -2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: all .5s ease-in-out;
+    padding: 2rem 0;
+}
+
+.mobile_nav_link a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 2rem;
+    padding: 2rem;
+}
+
+.btn_wrapper .mobile {
+    padding: 1rem 2rem;
+    font-size: 1.5rem;
+}
+
+.cross_icon {
+    font-size: 4rem;
+    color: var(--primary_colour);
+    cursor: pointer;
+
+    position: absolute;
+    top: 1rem;
+    right: 7rem;
+}
+
+
+/* ------------------Media Query for Tablets------------------------- */
+
+@media only screen and (max-width: 1050px) {
+    .navBar_wrapper {
+        display: none;
+    }
+
+    .mobile_nav {
+        opacity: 100;
+    }
+
+    /*-------------------------Home------------------------*/
+    .top {
+        padding: 3rem 2rem;
+    }
+
+    .right img {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    .border {
+        height: 25rem;
+        width: 20rem;
+    }
+
+    .bottom {
+        gap: 2rem;
+    }
+
+    /* ------------------Courses-------------------- */
+
+    .courses_wrapper {
+        padding: 0 2rem;
+    }
+
+    .swiper-slide {
+        padding: 0 2.4rem;
+    }
+
+    /* ----------------Popular Courses------------------------- */
+    .popular_wrapper {
+        padding: 0 2rem;
+    }
+
+    .card {
+        height: 22rem;
+        width: 13rem;
+        border-radius: 2rem;
+    }
+
+    .card_wrapper {
+        column-gap: 2rem;
+        row-gap: 4rem;
+    }
+
+    /* ---------------------- Instructors----------------------- */
+    .instructors_wrapper {
+        margin: 4rem 2rem;
+    }
+
+    /* -------------Contact us ---------------------------------- */
+    .contact_us {
+        margin: 2rem 2rem;
+    }
+}
+
+/* -------------------------Media Query for mobile---------------------- */
+@media only screen and (max-width: 600px) {
+
+    /* ---------------------------- Mobile Nav-------------------------- */
+    .mobile_nav_link {
+        height: 100vh;
+    }
+
+    .mobile_nav_link a {
+        font-size: 1.5rem;
+    }
+
+    .cross_icon {
+        font-size: 2.5rem;
+        right: 5rem;
+    }
+
+    .btn_wrapper .mobile {
+        padding: .5rem 2rem;
+    }
+
+    /* --------------------------Home---------------------------- */
+    .top {
+        flex-direction: column-reverse;
+    }
+
+    .right img {
+        height: 20rem;
+        width: 15rem;
+    }
+
+    .border {
+        height: 20rem;
+        width: 15rem;
+    }
+
+    .left {
+        font-size: 1.5rem;
+        text-align: center;
+        margin-right: 0;
+    }
+
+    /* ------------------------- Courses----------------------- */
+    .heading {
+        font-size: 1.2rem;
+    }
+
+    .courses_wrapper {
+        padding: 0 0rem;
+    }
+
+    .swiper-slide img {
+        height: 15rem;
+        width: 100%;
+    }
+
+    .swiper-slide {
+        padding-bottom: 3rem;
+    }
+
+    /* ----------------------------Popular Courses------------------------- */
+    .card_wrapper {
+        grid-template-columns: none;
+    }
+
+    .card {
+        width: 20rem;
+    }
+
+    /* --------------------Instructors-------------------------------- */
+    .instructors {
+        flex-direction: column;
+        gap: 2rem;
+    }
+
+    .instructors_wrapper {
+        margin: 4rem 0;
+    }
+
+    .instructor{
+        margin-right: 0;
+    }
+
+    /* --------------------- Contact Us-------------------------- */
+    .contact_us {
+        margin: 2rem 0rem;
+    }
+
+    .logos {
+        flex-direction: column;
+    }
+
+    .email, .mobile {
+        padding: 1rem 0rem;
+    }
+
+    .email h2, .mobile h2 {
+        font-size: 1.3rem;
+    }
+
+    .input_wrap1 {
+        flex-direction: column;
+        gap: 2rem;
+    }
+    .input_wrap1 input {
+       width: 100%;
+    }
+}
